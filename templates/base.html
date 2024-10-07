@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>{% block title %}Bonn Integration Bee{% endblock %}</title>
-</head>
-<body>
+    <head>
+		<title>Bonn Integration Bee 2024</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<link rel="icon" href="static/images/bee.png">
+	</head><body>
     <header>
         <h1>Wilkommen zur Bonn Integration Bee</h1>
         <nav>
@@ -17,8 +17,5 @@
     <main>
         {% block content %}{% endblock %}
     </main>
-    <footer>
-        <p>&copy; 2024 My Flask App</p>
-    </footer>
 </body>
 </html>
