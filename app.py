@@ -27,7 +27,7 @@ def register():
     registration = {
         "name": name,
         "email": email,
-        "roll": role
+        "role": role
     }
     with open('registrations.log', 'a') as f:
         json.dump(registration, f)
