@@ -3795,6 +3795,9 @@ input, select, textarea {
     background: #ffffffe0;
     border-bottom: 2px solid black;
     margin-bottom: 3em;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .hero header {
