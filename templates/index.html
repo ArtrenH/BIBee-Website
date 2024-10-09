@@ -3,114 +3,98 @@
 {% block content %}
 	<body class="is-preload">
 		<div id="wrapper">
-				<header id="header" class="alt">
-					<span class="logo"><img src="static/images/logo_stripped.png" alt="" /></span>
-					<h1>Bonn Integration Bee 2024</h1>
-					<p>Bonns erster und bester Integrationswettbewerb<br />
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#intro" class="active">Was ist die Bonn Integration Bee?</a></li>
-						<li><a href="#register">Anmeldung</a></li>
-						<li><a href="#rules">Regelwerk</a></li>
-						<li><a href="#footer">Impressum</a></li>
-					</ul>
-				</nav>
+			<header id="header" class="alt">
+				<span class="logo"><img src="static/images/logo.png" alt="" /></span>
+				<h1>Bonn Integration Bee 2024</h1>
+				<p>Bonns erster und bester Integrationswettbewerb<br />
+			</header>
+			<nav id="nav">
+				<ul>
+					<li><a href="#intro" class="active">Was ist die Bonn Integration Bee?</a></li>
+					<li><a href="#register">Anmeldung</a></li>
+					<li><a href="#rules">Regelwerk</a></li>
+					<li><a href="#footer">Impressum</a></li>
+				</ul>
+			</nav>
 
-				<div id="main">
-					<section id="intro" class="main">
-						<div class="spotlight">
-							<div class="content">
-								<header class="major">
-									<h2>Was ist die Bonn Integration Bee?</h2>
-								</header>
-								<p>Am <a href="static/assets/other/bibee24_termin.ics">08.11.2024</a> habt ihr die Chance, eure Integrationsskills bei der Bonn Integration Bee – kurz <i>BIBee</i> – unter Beweis zu stellen. Los geht’s ab <strong>16:00 Uhr</strong> in den kleinen und großen Hörsälen der <strong>Wegelerstraße 10</strong>. Zuerst kämpfen alle Teilnehmenden in einem <strong>Kahoot-Quiz</strong> um den Einzug ins K.-o.-Turnier, dann geht es in spannenden <strong>1-gegen-1-Duellen</strong> um den Sieg – bis schließlich im großen Finale der oder die Beste gekürt wird.</p>
-								<p>Falls ihr euch fragt, was genau auf euch zukommt, dann findet ihr hier Infos zur <a href="https://math.mit.edu/~yyao1/integrationbee.html" target="_blank"><i>MIT Integration Bee</i></a> – dem Event, das uns inspiriert hat!</p>
-								<p><strong>Mitmachen darf jede:r!</strong> Das genaue Regelwerk und weitere Infos gibt’s <a href="#rules">hier</a>.</p>
-								<p><strong>Zu gewinnen gibt es natürlich tolle Preise!</strong> Um die Spannung aufrechtzuerhalten, wird natürlich erst bei der Siegerehrung bekannt gegeben, was es zu gewinnen gibt.</p>
-							</div>
-							<span class="image"><img src="static/images/bee.png" style="transform: rotate(-180deg)"  alt="bee"/></span>
+			<div id="main">
+				<section id="intro" class="main">
+					<div class="spotlight">
+						<div class="content">
+							<header class="major">
+								<h2>Was ist die Bonn Integration Bee?</h2>
+							</header>
+							<p>Am <a href="static/assets/other/bibee24_termin.ics">08.11.2024</a> habt ihr die Chance, eure Integrationsskills bei der Bonn Integration Bee – kurz <i>BIBee</i> – unter Beweis zu stellen. Los geht’s ab <strong>16:00 Uhr</strong> im kleinen und großen Hörsaal in der <strong>Wegelerstraße 10</strong>. Zuerst treten alle Teilnehmenden in einem <strong>Kahoot-Quiz</strong> an, um sich den Einzug in die K.-o.-Runde zu sichern, dann geht es in spannenden <strong>1-gegen-1-Duellen</strong> um den Sieg – bis schließlich im großen Finale der oder die Beste gekürt wird.</p>
+							<p>Falls ihr euch fragt, was genau auf euch zukommt, dann findet ihr hier Infos zur <a href="https://math.mit.edu/~yyao1/integrationbee.html" target="_blank"><i>MIT Integration Bee</i></a> – dem Event, das uns inspiriert hat!</p>
+							<p><strong>Mitmachen dürfen alle!</strong> Das genaue Regelwerk und weitere Infos gibt’s <a href="#rules">hier</a>.</p>
+							<p><strong>Zu gewinnen gibt es natürlich tolle Preise!</strong> Um die Spannung aufrechtzuerhalten, wird natürlich erst bei der Siegerehrung bekannt gegeben, was es zu gewinnen gibt.</p>
 						</div>
-					</section>
+						<span class="image"><img src="static/images/bee.png" style="transform: rotate(-180deg)"  alt="bee"/></span>
+					</div>
+				</section>
 
-					<section id="register" class="main special">
-						<header class="major">
-							<h2>Anmeldung</h2>
-						</header>
-							<form id="registerForm" action="/register" method="POST">
-								<label for="name">Vor- und Nachname:</label>
-								<input type="text" id="name" name="name" required>
+				<section id="register" class="main special">
+					<header class="major">
+						<h2>Anmeldung</h2>
+					</header>
+						<form id="registerForm" action="/register" method="POST">
+							<label for="name">Vor- und Nachname:</label>
+							<input type="text" id="name" name="name" required>
 
-								<label for="email">E-Mail:</label>
-								<input type="email" id="email" name="email" required>
+							<label for="email">E-Mail:</label>
+							<input type="email" id="email" name="email" required>
 
-								<label for="role">Rolle:</label>
-								<select id="role" name="role" required>
-									<option value="student">Student*in</option>
-									<option value="teacher">Dozent*in</option>
-									<option value="other">Sonstiges</option>
-								</select>
+							<label for="role">Rolle:</label>
+							<select id="role" name="role" required>
+								<option value="student">Student*in</option>
+								<option value="teacher">Dozent*in</option>
+								<option value="other">Sonstiges</option>
+							</select>
 
-								<button type="submit" class="button">Register</button>
-							</form>
-						<div id="notification" style="display: none;"></div>
-					</section>
+							<button type="submit" class="button">Register</button>
+						</form>
+					<div id="notification" style="display: none;"></div>
+				</section>
 
-					<section id="rules" class="main special">
-						<header class="major">
-							<h2>Regelwerk</h2>
-							<p>Hier findest du das Regelwerk.</p>
-							<a href="static/assets/other/regelwerk.pdf" download class="button"> Regelwerk herunterladen</a>
-							<p>Bei Fragen melde dich gerne unter <a href="mailto:bibee2024@gmail.com?subject=Frage%20zum%20Regelwerk">bibee2024@gmail.com</a></p>
-						</header>
-					</section>
+				<section id="rules" class="main special">
+					<header class="major">
+						<h2>Regelwerk</h2>
+						<p>Hier findest du das Regelwerk.</p>
+						<a href="static/assets/other/regelwerk.pdf" download class="button"> Regelwerk herunterladen</a>
+						<p>Bei Fragen melde dich gerne unter <a href="mailto:bibee2024@gmail.com?subject=Frage%20zum%20Regelwerk">bibee2024@gmail.com</a></p>
+					</header>
+				</section>
 
-					<section id="countdown" class="main special">
-						<header class="major">
-							<h2>Countdown zur Bonn Integration Bee</h2>
-							<h2>
-								<span id="time" style="margin-left: 15px"></span>
-							</h2>
-							Wenn ihr das Event auf keinen Fall verpassen wollt, speichert es doch einfach mit <a href="static/assets/other/bibee24_termin.ics">diesem Link</a> in eurem Kalender!
-							<script>
-								const countDownDate = new Date("Nov 08, 2024 16:00:00").getTime();
-								const countdownFunction = setInterval(function() {
-									const now = new Date().getTime();
-									const distance = countDownDate - now;
-									const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-									const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-									const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-									const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-									document.getElementById("time").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-									if (distance < 0) {
-										clearInterval(countdownFunction);
-										document.getElementById("time").innerHTML = "Der Wettbewerb hat begonnen!";
-									}
-								}, 1000);
-							</script>
-						</header>
-					</section>
-				</div>
+				<section id="countdown" class="main special">
+					<header class="major">
+						<h2>Countdown zur Bonn Integration Bee</h2>
+						<h2>
+							<span id="time" style="margin-left: 15px"></span>
+						</h2>
+						Wenn ihr das Event auf keinen Fall verpassen wollt, speichert es doch einfach mit <a href="static/assets/other/bibee24_termin.ics">diesem Link</a> in eurem Kalender!
+					</header>
+				</section>
+			</div>
 
-				<!-- Footer -->
-				<footer id="footer">
-					<section>
-						<h2>Impressum</h2>
-						<dl class="alt">
-							<dt>Ansprechpartner</dt>
-							<dd>Hermann Burkhard Siemon </dd>
-							<dt>Addresse</dt>
-							<dd> Hermann Burkhard Siemon &bull; <br> Ferdinandstra&szlig;e 42 &bull; <br> 53127 Bonn</dd>
-							<h3>Kontakt</h3>
-							<dt>Telefon:</dt>
-							<dd><a href="tel:+4917677366569">+4917677366569</a></dd>
-							<dt>Email</dt>
-							<dd><a href="mailto:bibee2024@gmail.com">bibee2024@gmail.com</a></dd>
-						</dl>
-						<p>Quelle: <a href="https://www.e-recht24.de">e-recht24.de</a></p>
-					</section>
-					<p class="copyright">&copy; BIBee 2024</p>
-				</footer>
+			<!-- Footer -->
+			<footer id="footer">
+				<section>
+					<h2>Impressum</h2>
+					<dl class="alt">
+						<dt>Ansprechpartner</dt>
+						<dd>Hermann Burkhard Siemon </dd>
+						<dt>Addresse</dt>
+						<dd> Hermann Burkhard Siemon &bull; <br> Ferdinandstra&szlig;e 42 &bull; <br> 53127 Bonn</dd>
+						<h3>Kontakt</h3>
+						<dt>Telefon:</dt>
+						<dd><a href="tel:+4917677366569">+4917677366569</a></dd>
+						<dt>Email</dt>
+						<dd><a href="mailto:bibee2024@gmail.com">bibee2024@gmail.com</a></dd>
+					</dl>
+					<p>Quelle: <a href="https://www.e-recht24.de">e-recht24.de</a></p>
+				</section>
+				<p class="copyright">&copy; BIBee 2024</p>
+			</footer>
 
 		</div>
 
@@ -122,34 +106,7 @@
 		<script src="static/assets/js/breakpoints.min.js"></script>
 		<script src="static/assets/js/util.js"></script>
 		<script src="static/assets/js/main.js"></script>
+		<script src="static/assets/js/index.js"></script>
 
 	</body>
-	<script>
-		document.getElementById('registerForm').addEventListener('submit', async function(event) {
-			event.preventDefault(); // Prevent the form from submitting the traditional way
-
-			const form = event.target;
-			const formData = new FormData(form);
-
-			try {
-				const response = await fetch('/register', {
-					method: 'POST',
-					body: formData
-				});
-				console.log(response);
-
-				const notification = document.getElementById('notification');
-				notification.style.display = 'block';
-				if (response.ok) {
-					notification.textContent = 'Erfolgreich registriert!';
-					notification.style.color = 'green';
-				} else {
-					notification.textContent = 'Etwas ist schief gelaufen. Bitte versuche es erneut oder kontaktiere uns per Mail.';
-					notification.style.color = 'red';
-				}
-			} catch (error) {
-				console.error('Error:', error);
-			}
-		});
-	</script>
 {% endblock %}
