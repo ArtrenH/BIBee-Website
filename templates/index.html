@@ -2,12 +2,18 @@
 
 {% block content %}
 	<body class="is-preload">
-		<div id="wrapper">
-			<header id="header" class="alt">
-				<span class="logo"><img src="static/images/logo.png" alt="" /></span>
-				<h1>Bonn Integration Bee 2024</h1>
-				<p>Bonns erster und bester Integrationswettbewerb<br />
-			</header>
+        <div class="hero">
+            <div class="wrapper">
+                <header id="header" class="alt">
+                    <div class="logo">
+                        <img src="static/images/logo.png" alt="Bonn Integration Bee Logo" />
+                    </div>
+                    <h1>Bonn Integration Bee 2024</h1>
+                    <p>Bonns erster und bester Integrationswettbewerb</p>
+                </header>
+            </div>
+        </div>
+		<div class="wrapper">
 			<nav id="nav">
 				<ul>
 					<li><a href="#intro" class="active">Was ist die Bonn Integration Bee?</a></li>
@@ -29,7 +35,9 @@
 							<p><strong>Mitmachen dürfen alle!</strong> Das genaue Regelwerk und weitere Infos gibt’s <a href="#rules">hier</a>.</p>
 							<p><strong>Zu gewinnen gibt es natürlich tolle Preise!</strong> Um die Spannung aufrechtzuerhalten, wird natürlich erst bei der Siegerehrung bekannt gegeben, was es zu gewinnen gibt.</p>
 						</div>
-						<span class="image"><img src="static/images/bee.png" style="transform: rotate(-180deg)"  alt="bee"/></span>
+						<div class="image">
+                            <img src="static/images/bee.png" style="transform: rotate(-180deg)" alt="Bonn's Integration Bee"/>
+                        </div>
 					</div>
 				</section>
 
@@ -51,7 +59,7 @@
 								<option value="other">Sonstiges</option>
 							</select>
 
-							<button type="submit" class="button">Register</button>
+							<button type="submit" class="button">Anmelden</button>
 						</form>
 					<div id="notification" style="display: none;"></div>
 				</section>
@@ -59,45 +67,46 @@
 				<section id="rules" class="main special">
 					<header class="major">
 						<h2>Regelwerk</h2>
-						<p>Hier findest du das Regelwerk.</p>
-						<a href="static/assets/other/regelwerk.pdf" download class="button"> Regelwerk herunterladen</a>
-						<p>Bei Fragen melde dich gerne unter <a href="mailto:bibee2024@gmail.com?subject=Frage%20zum%20Regelwerk">bibee2024@gmail.com</a></p>
+						<p>
+                            Hier findest du das Regelwerk.
+                            <a href="static/assets/other/regelwerk.pdf" download class="button inline-button"> Regelwerk herunterladen</a>
+                            Bei Fragen melde dich gerne unter <a href="mailto:bibee2024@gmail.com?subject=Frage%20zum%20Regelwerk">bibee2024@gmail.com</a>
+                        </p>
 					</header>
 				</section>
 
 				<section id="countdown" class="main special">
 					<header class="major">
 						<h2>Countdown zur Bonn Integration Bee</h2>
-						<h2>
+						<h2 class="reversed-gradient">
 							<span id="time" style="margin-left: 15px"></span>
 						</h2>
 						Wenn ihr das Event auf keinen Fall verpassen wollt, speichert es doch einfach mit <a href="static/assets/other/bibee24_termin.ics">diesem Link</a> in eurem Kalender!
 					</header>
 				</section>
 			</div>
-
-			<!-- Footer -->
-			<footer id="footer">
-				<section>
-					<h2>Impressum</h2>
-					<dl class="alt">
-						<dt>Ansprechpartner</dt>
-						<dd>Hermann Burkhard Siemon </dd>
-						<dt>Addresse</dt>
-						<dd> Hermann Burkhard Siemon &bull; <br> Ferdinandstra&szlig;e 42 &bull; <br> 53127 Bonn</dd>
-						<h3>Kontakt</h3>
-						<dt>Telefon:</dt>
-						<dd><a href="tel:+4917677366569">+4917677366569</a></dd>
-						<dt>Email</dt>
-						<dd><a href="mailto:bibee2024@gmail.com">bibee2024@gmail.com</a></dd>
-					</dl>
-					<p>Quelle: <a href="https://www.e-recht24.de">e-recht24.de</a></p>
-				</section>
-				<p class="copyright">&copy; BIBee 2024</p>
-			</footer>
-
 		</div>
 
+        <!-- Footer -->
+        <footer id="footer">
+            <section>
+                <h2>Impressum</h2>
+                <dl class="alt">
+                    <dt>Ansprechpartner</dt>
+                    <dd>Hermann Burkhard Siemon </dd>
+                    <dt>Addresse</dt>
+                    <dd> Hermann Burkhard Siemon &bull; <br> Ferdinandstra&szlig;e 42 &bull; <br> 53127 Bonn</dd>
+                    <h3>Kontakt</h3>
+                    <dt>Telefon:</dt>
+                    <dd><a href="tel:+4917677366569">+4917677366569</a></dd>
+                    <dt>Email</dt>
+                    <dd><a href="mailto:bibee2024@gmail.com">bibee2024@gmail.com</a></dd>
+                </dl>
+                <p>Quelle: <a href="https://www.e-recht24.de">e-recht24.de</a></p>
+            </section>
+            <p class="copyright">&copy; BIBee 2024</p>
+        </footer>
+        
 		<!-- Scripts -->
 		<script src="static/assets/js/jquery.min.js"></script>
 		<script src="static/assets/js/jquery.scrollex.min.js"></script>
