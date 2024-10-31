@@ -3849,6 +3849,19 @@ input, select, textarea {
     margin-inline: auto;
 }
 
+#timetable .inline-button {
+	display: block;
+	margin-block: 1em;
+	width: min-content;
+	margin-inline: auto;
+}
+
+.centered-image {
+	display: block;
+    margin: 15px auto;
+    width: 80%;
+}
+
 .reversed-gradient {
     margin-top: -.5em !important;
 }
