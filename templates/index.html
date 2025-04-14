@@ -23,6 +23,8 @@
 					<li><a href="#intro" class="active">Was ist die Bonn Integration Bee?</a></li>
 					<li><a href="#register">Anmeldung</a></li>
 					<li><a href="#rules">Regelwerk</a></li>
+					<!--<li><a href="#images">Bilder</a></li>-->
+					<li><a href="#solutions">Lösungen</a></li>
 					<li><a href="#footer">Impressum</a></li>
 				</ul>
 			</nav>
@@ -34,7 +36,7 @@
 							<header class="major">
 								<h2>Was ist die Bonn Integration Bee?</h2>
 							</header>
-							<p>Am <a href="static/assets/other/bibee24_termin.ics">08.11.2024</a> habt ihr die Chance, eure Integrationsskills bei der Bonn Integration Bee – kurz <i>BIBee</i> – unter Beweis zu stellen. Los geht’s ab <strong>16:00 Uhr</strong> im kleinen und großen Hörsaal in der <strong>Wegelerstraße 10</strong>. Zuerst treten alle Teilnehmenden in einem <strong>Kahoot-Quiz</strong> an, um sich den Einzug in die K.-o.-Runde zu sichern, dann geht es in spannenden <strong>1-gegen-1-Duellen</strong> um den Sieg – bis schließlich im großen Finale der oder die Beste gekürt wird.</p>
+							<p>Am <a href="static/assets/other/bibee24_termin.ics">16.05.2024</a> habt ihr die Chance, eure Integrationsskills bei der Bonn Integration Bee – kurz <i>BIBee</i> – unter Beweis zu stellen. Los geht’s ab <strong>16:00 Uhr</strong> im kleinen und großen Hörsaal in der <strong>Wegelerstraße 10</strong>. Zuerst treten alle Teilnehmenden in einem <strong>Kahoot-Quiz</strong> an, um sich den Einzug in die K.-o.-Runde zu sichern, dann geht es in spannenden <strong>1-gegen-1-Duellen</strong> um den Sieg – bis schließlich im großen Finale der oder die Beste gekürt wird.</p>
 							<p>Falls ihr euch fragt, was genau auf euch zukommt, dann findet ihr hier Infos zur <a href="https://math.mit.edu/~yyao1/integrationbee.html" target="_blank"><i>MIT Integration Bee</i></a> – dem Event, das uns inspiriert hat!</p>
 							<p><strong>Mitmachen dürfen alle!</strong> Das genaue Regelwerk und weitere Infos gibt’s <a href="#rules">hier</a>.</p>
 							<p><strong>Zuschauer sind natürlich auch herzlich willkommen!</strong></p>
@@ -50,22 +52,11 @@
 					<header class="major">
 						<h2>Anmeldung</h2>
 					</header>
-						<form id="registerForm" action="/register" method="POST">
-							<label for="name">Vor- und Nachname:</label>
-							<input type="text" id="name" name="name" required>
 
-							<label for="email">E-Mail:</label>
-							<input type="email" id="email" name="email" required>
-
-							<label for="role">Rolle:</label>
-							<select id="role" name="role" required>
-								<option value="student">Student*in</option>
-								<option value="teacher">Dozent*in</option>
-								<option value="other">Sonstiges</option>
-							</select>
-
-							<button type="submit" class="button">Anmelden</button>
-						</form>
+                    <p>
+                        Ab der zweiten Bonn Integration Bee im Frühjahr 2025 ist keine Anmeldung mehr nötig - komm einfach vorbei und mach beim Kahoot mit!
+                    </p>
+						
 					<div id="notification" style="display: none;"></div>
 				</section>
 
@@ -74,7 +65,9 @@
 						<h2>Regelwerk</h2>
 						<p>
                             Hier findest du das Regelwerk.
-                            <a href="static/assets/other/regelwerk.pdf" download class="button inline-button"> Regelwerk herunterladen</a>
+                            <a href="static/assets/other/rule_set_en.pdf" download class="button inline-button"> Download english ruleset</a>
+                            Für den Wettbewerb gültig ist die englische Version des Regelwerks. Hier findest Du eine weitgehend mit der englischen Version übereinstimmende deutsche Version:
+                            <a href="static/assets/other/rule_set_de.pdf" download class="button inline-button"> Deutsches Regelwerk herunterladen</a>
                             Bei Fragen melde dich gerne unter <a href="mailto:bibee2024@gmail.com?subject=Frage%20zum%20Regelwerk">bibee2024@gmail.com</a>
                         </p>
 					</header>
@@ -94,10 +87,33 @@
 					<header class="major">
 						<h2>Ablaufplan</h2>
 						<p>
-							Der Ablaufplan für die Bonn Integration Bee 2024:
+							Der Ablaufplan für die Bonn Integration Bee 2025:
 							<img src="static/images/timetable.png" alt="" class="centered-image">
 							<a href="static/assets/other/timetable.pdf" download class="button inline-button"> Ablaufplan herunterladen</a>
 						</p>
+					</header>
+				</section>
+
+                <!--<section id="images" class="main special">
+					<header class="major">
+						<h2>Bilder von der ersten Bonn Integration Bee</h2>
+                        <div class="carousel">
+                            <a class="carousel-item" href="#one!"><img src="static/assets/img/final_photo.webp"></a>
+                            <a class="carousel-item" href="#one!"><img src="static/assets/img/kahoot1.webp"></a>
+                            <a class="carousel-item" href="#one!"><img src="static/assets/img/finalists1.webp"></a>
+                            <a class="carousel-item" href="#one!"><img src="static/assets/img/award3.webp"></a>
+                            <a class="carousel-item" href="#one!"><img src="static/assets/img/award2.webp"></a>
+                            <a class="carousel-item" href="#one!"><img src="static/assets/img/award1.webp"></a>
+                        </div>
+					</header>
+				</section>-->
+
+                <section id="solutions" class="main special">
+					<header class="major">
+						<h2>Lösungen der Integrale der ersten Bonn Integration Bee</h2>
+                        <p>
+                            <a href="static/assets/other/solutions.pdf" download class="button inline-button">Lösungen herunterladen</a>
+                        </p>
 					</header>
 				</section>
 
@@ -123,6 +139,7 @@
             </section>
             <p class="copyright">&copy; BIBee 2024</p>
         </footer>
+        
         
 		<!-- Scripts -->
 		<script src="static/assets/js/jquery.min.js"></script>

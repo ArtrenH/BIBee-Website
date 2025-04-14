@@ -1,5 +1,5 @@
 // Countdown
-const countDownDate = new Date("Nov 08, 2024 16:00:00").getTime();
+const countDownDate = new Date("May 16, 2025 16:00:00").getTime();
 const countdownFunction = setInterval(function() {
     const now = new Date().getTime();
     const distance = countDownDate - now;
@@ -13,32 +13,3 @@ const countdownFunction = setInterval(function() {
         document.getElementById("time").innerHTML = "Der Wettbewerb hat begonnen!";
     }
 }, 1000);
-
-
-// form submit
-document.getElementById('registerForm').addEventListener('submit', async function(event) {
-    event.preventDefault(); // Prevent the form from submitting the traditional way
-
-    const form = event.target;
-    const formData = new FormData(form);
-
-    try {
-        const response = await fetch('/register', {
-            method: 'POST',
-            body: formData
-        });
-        console.log(response);
-
-        const notification = document.getElementById('notification');
-        notification.style.display = 'block';
-        if (response.ok) {
-            notification.textContent = 'Erfolgreich registriert!';
-            notification.style.color = 'green';
-        } else {
-            notification.textContent = 'Etwas ist schief gelaufen. Bitte versuche es erneut oder kontaktiere uns per Mail.';
-            notification.style.color = 'red';
-        }
-    } catch (error) {
-        console.error('Error:', error);
-    }
-});
