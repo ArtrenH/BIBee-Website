@@ -1,5 +1,5 @@
 // Countdown
-const countDownDate = new Date("May 16, 2025 16:00:00").getTime();
+const countDownDate = new Date("May 8, 2026 16:00:00").getTime();
 const countdownFunction = setInterval(function() {
     const now = new Date().getTime();
     const distance = countDownDate - now;
