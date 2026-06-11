@@ -10,6 +10,17 @@ const countdownFunction = setInterval(function() {
     document.getElementById("time").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
     if (distance < 0) {
         clearInterval(countdownFunction);
-        document.getElementById("time").innerHTML = "Der Wettbewerb hat begonnen!";
+        document.getElementById("time").innerHTML = "🐝 The competition has started! 🐝";
     }
 }, 1000);
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".js-email").forEach(el => {
+    const user = atob(el.dataset.u);
+    const domain = atob(el.dataset.d);
+    const email = `${user}@${domain}`;
+
+    el.href = `mailto:${email}`;
+    el.textContent = email;
+  });
+});
